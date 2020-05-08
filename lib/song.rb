@@ -12,8 +12,9 @@ class Song
       @genre = genre
       @@artists << artist
       @@genres << genre
-      @@genre_count ? genre_count[genre] += 1 : genre_count[genre] = 1
-      @@artist_count ? artist_count[artist] += 1 : artist_count[artist] = 1
+      @@genre_count[genre] ? @@genre_count[genre] += 1 : @@genre_count[genre] = 1
+      @@artist_count[artist] ? @@artist_count[artist] += 1 : @@artist_count[artist] = 1
+# @@artist_count = {sting: 1, seal: 2, jbalwin: 2}
       @@count += 1
     end
 
