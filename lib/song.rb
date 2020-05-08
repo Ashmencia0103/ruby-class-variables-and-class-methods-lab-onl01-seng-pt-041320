@@ -10,7 +10,7 @@ class Song
       @name = name
       @artist = artist
       @genre = genre
-      @@artists << artists
+      @@artists << artist
       @@genres << genre
       @@genre_count ? genre_count[genre] += 1 : genre_count[genre] = 1
       @@artist_count ? artist_count[artist] += 1 : artist_count[artist] = 1
